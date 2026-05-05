@@ -77,23 +77,22 @@ function App() {
       return;
     }
 
+    setError(null)
+
     // sinon
-    else {
-        const newWord = {
-        text: inputValue
-      }
+    const newWord = {
+      text: inputValue
+    }
 
       // on doit ajouter le mot dans la DB avant
-      axios
-        .post("http://localhost:3001/words", newWord)
-        .then(response => {
-          dispatch({
-            type: "ADD_WORD",
-            payload: response.data
-          })
+    axios
+      .post("http://localhost:3001/words", newWord)
+      .then(response => {
+        dispatch({
+          type: "ADD_WORD",
+          payload: response.data
         })
-    
-    }
+      })
 
     // on clear
     setInputValue('')
@@ -130,7 +129,16 @@ function App() {
       <input
         type="text"
         value={inputValue}
-        onChange={(e) => setInputValue(e.target.value)}
+        onChange={(e) =>
+          {
+            const value = e.target.value;
+            setInputValue(value);
+
+            if (value === "") {
+              setError(null)
+            };
+          }
+        }
         placeholder="Type a word"
       />
       <button onClick={handleAdd}>Add a new word</button>

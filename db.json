@@ -2,7 +2,11 @@
   "words": [
     {
       "text": "word",
-      "id": "DhoosxLamEY"
+      "id": "Mt0iy_bNP94"
+    },
+    {
+      "text": "sun",
+      "id": "oGSiIosrNj8"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
