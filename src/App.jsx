@@ -19,7 +19,6 @@ function App() {
       })
   }, [])
 
-
   // 1) définir le state initial
   const initialState = {
     words: []
@@ -63,6 +62,22 @@ function App() {
     invalid: null,
     notFound: null
   });
+
+  // on doit récupérer et stocker (dans le json) les valeurs par mot se trouvant dans l'API. on doit le faire pour chaque mot ajouté.
+  // on crée une fonction asynchrone dans laquelle on utilise la méthode axios pour appeler et récupérer les données sur le mot pris en argument
+  const fetchWordData = async (inputValue) => {
+    const response = await axios.get(`https://api.dictionaryapi.dev/api/v2/entries/en/${inputValue}`)
+    //on fait donc une requête HTTP GET à l'API
+    const data = response.data[0]
+    // on a en réponse un objet qui contient notamment response.data qui contient toutes les infos liées à ce mot
+    // et on prend le premier de la liste (le premier qui apparait)
+    return {
+      // et en résultat, on renoit un objet qui contient phonetic et definition
+      phonetic: data.phonetic || "",
+      definition: data.meanings?.[0]?.definitions?.[0]?.definition || ""
+      // ?. (optional chaning) permet de faire que si quelque chose n'existe pas, le code ne casse pas (ça return undefined)
+    }
+  };
 
   // on va vérifier si le mot qu'on veut ajouter existe dans le dictionnaire:
   const checkDictionnary = async (inputValue) => {
@@ -130,15 +145,22 @@ function App() {
     if (hasError) return;
 
     // sinon
+
+    // on récupère les champs phonetic et definition de l'API
+    const wordData = await fetchWordData(inputValue)
+
+    // on les ajoute dans le nouvel objet / mot
     const newWord = {
-      text: inputValue
+      text: inputValue,
+      phonetic: wordData.phonetic,
+      definition: wordData.definition
     }
 
       // on doit ajouter le mot dans la DB avant
     axios
-      .post("http://localhost:3001/words", newWord)
-      .then(response => {
-        dispatch({
+      .post("http://localhost:3001/words", newWord) //envoyé au backend
+      .then(response => { //réponse du backend
+        dispatch({ //ajout dans le state initial
           type: "ADD_WORD",
           payload: response.data
         })
@@ -169,6 +191,7 @@ function App() {
         <>
         <li key={word.id}>{word.text}</li>
         <button onClick={() => handleRemove(word.id)}>X</button>
+        <div></div>
         </>
       )))
       :

@@ -2,7 +2,27 @@
   "words": [
     {
       "text": "word",
-      "id": "6vYiCrVoVdE"
+      "phonetic": "/wɜːd/",
+      "definition": "",
+      "id": "KwGS_AJJz5U"
+    },
+    {
+      "text": "sun",
+      "phonetic": "/sʌn/",
+      "definition": "",
+      "id": "VMffVshv3tQ"
+    },
+    {
+      "text": "chair",
+      "phonetic": "/t͡ʃɛə(ɹ)/",
+      "definition": "",
+      "id": "C932dszgTLs"
+    },
+    {
+      "text": "drowsy",
+      "phonetic": "/ˈdɹaʊzi/",
+      "definition": "Inclined to drowse; heavy with sleepiness",
+      "id": "6lj96V4mGjE"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
