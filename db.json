@@ -1,12 +1,8 @@
 {
   "words": [
     {
-      "text": "new",
-      "id": "wo1QGOYhFsE"
-    },
-    {
-      "text": "sun",
-      "id": "djBejv6xK58"
+      "text": "word",
+      "id": "DhoosxLamEY"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

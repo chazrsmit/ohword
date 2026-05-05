@@ -54,7 +54,11 @@ function App() {
   // 3) on appelle le useReducer, dans lequel on met la fonction reducer et l'état initial
   const [state, dispatch] = useReducer(reducer, initialState);
 
+  // valeur que l'on tape dans le input field
   const [inputValue, setInputValue] = useState("");
+
+  // gérer les erreurs
+  const [error, setError] = useState(null);
 
   // on va créer une fonction qui va gérer l'ajout d'un mot, où il va falloir vérifier que le mot n'est pas dans la liste, et vérifier qu'il s'agit d'un mot valable en le cherchant dans l'API
   const handleAdd = () => {
@@ -62,31 +66,38 @@ function App() {
     if (!inputValue) return
 
     // on vérifie que le mot n'est pas déjà dans la liste
-    const exists = state.words.includes(inputValue)
+    const exists = state.words.some(word => 
+      word.text === inputValue
+    )
 
     if (exists) {
       // message d'erreur
-      console.log("ce mot existe déjà")
-      return
+      console.log("ce mot existe déjà");
+      setError("Ce mot est déjà dans la liste.")
+      return;
     }
 
     // sinon
-    const newWord = {
-      text: inputValue
-    }
+    else {
+        const newWord = {
+        text: inputValue
+      }
 
-    // on doit ajouter le mot dans la DB avant
-    axios
-      .post("http://localhost:3001/words", newWord)
-      .then(response => {
-        dispatch({
-          type: "ADD_WORD",
-          payload: response.data
+      // on doit ajouter le mot dans la DB avant
+      axios
+        .post("http://localhost:3001/words", newWord)
+        .then(response => {
+          dispatch({
+            type: "ADD_WORD",
+            payload: response.data
+          })
         })
-      })
+    
+    }
 
     // on clear
     setInputValue('')
+    setError(null)
   }
 
   // fonction pour supprimer un mot
@@ -123,6 +134,11 @@ function App() {
         placeholder="Type a word"
       />
       <button onClick={handleAdd}>Add a new word</button>
+      {error ?? 
+        <div>
+          <p>{error}</p>
+        </div>
+      }
     </>
   )
 }
