@@ -58,26 +58,52 @@ function App() {
   const [inputValue, setInputValue] = useState("");
 
   // gérer les erreurs
-  const [error, setError] = useState(null);
+  const [errors, setErrors] = useState({
+    duplicate: null,
+    invalid: null
+  });
 
   // on va créer une fonction qui va gérer l'ajout d'un mot, où il va falloir vérifier que le mot n'est pas dans la liste, et vérifier qu'il s'agit d'un mot valable en le cherchant dans l'API
   const handleAdd = () => {
     // s'il n'y a pas d'input on return
     if (!inputValue) return
 
+    let hasError = false;
+
+    //on vérifie qu'il n'y a pas d'erreur au niveau des caractrèes (avec un regex)
+    const isValid = /^[A-Za-zÀ-ÿ\s]+$/.test(inputValue.trim());
+
     // on vérifie que le mot n'est pas déjà dans la liste
     const exists = state.words.some(word => 
-      word.text === inputValue
+      word.text === inputValue.trim()
     )
 
-    if (exists) {
-      // message d'erreur
-      console.log("ce mot existe déjà");
-      setError("Ce mot est déjà dans la liste.")
-      return;
+    // reset erreurs au départ
+    setErrors({
+      duplicate: null,
+      invalidChars: null
+    });
+
+    // message validation caractères
+    if (!isValid) {
+      setErrors(prev => ({
+        ...prev,
+        invalid: "Seules les lettres sont autorisées."
+        }))
+      hasError = true  
     }
 
-    setError(null)
+    // message doublon
+    if (exists) {
+      setErrors(prev => ({
+        ...prev,
+        duplicate: "Ce mot existe déjà dans la liste."
+      }))
+      hasError = true
+
+    }
+
+    if (hasError) return;
 
     // sinon
     const newWord = {
@@ -135,16 +161,25 @@ function App() {
             setInputValue(value);
 
             if (value === "") {
-              setError(null)
+              setErrors({
+                duplicate: null,
+                invalid: null
+              })
             };
           }
         }
         placeholder="Type a word"
       />
       <button onClick={handleAdd}>Add a new word</button>
-      {error ?? 
+      {/* affichage des erreurs */}
+      {errors.invalid && 
         <div>
-          <p>{error}</p>
+          <p>{errors.invalid}</p>
+        </div>
+      }
+      {errors.duplicate &&
+          <div>
+          <p>{errors.duplicate}</p>
         </div>
       }
     </>
