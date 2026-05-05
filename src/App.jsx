@@ -60,11 +60,23 @@ function App() {
   // gérer les erreurs
   const [errors, setErrors] = useState({
     duplicate: null,
-    invalid: null
+    invalid: null,
+    notFound: null
   });
 
+  // on va vérifier si le mot qu'on veut ajouter existe dans le dictionnaire:
+  const checkDictionnary = async (inputValue) => {
+    try {
+      await axios.get(`https://api.dictionaryapi.dev/api/v2/entries/en/${inputValue}`);
+      return true;
+    }
+    catch (err) {
+      return false;
+    }
+  }
+
   // on va créer une fonction qui va gérer l'ajout d'un mot, où il va falloir vérifier que le mot n'est pas dans la liste, et vérifier qu'il s'agit d'un mot valable en le cherchant dans l'API
-  const handleAdd = () => {
+  const handleAdd = async () => {
     // s'il n'y a pas d'input on return
     if (!inputValue) return
 
@@ -78,11 +90,23 @@ function App() {
       word.text === inputValue.trim()
     )
 
+    const isInDictionary = await checkDictionnary(inputValue.trim());
+
     // reset erreurs au départ
     setErrors({
       duplicate: null,
-      invalidChars: null
+      invalidChars: null,
+      notFound: null
     });
+
+    // message si le mot n'est pas dans le dictionnaire:
+    if (!isInDictionary) {
+      setErrors(prev => ({
+        ...prev,
+        notFound: "Ce mot n'existe pas dans le dictionnaire anglais."
+      }));
+      hasError = true;
+    }
 
     // message validation caractères
     if (!isValid) {
@@ -163,7 +187,8 @@ function App() {
             if (value === "") {
               setErrors({
                 duplicate: null,
-                invalid: null
+                invalid: null,
+                notFound: null
               })
             };
           }
@@ -180,6 +205,12 @@ function App() {
       {errors.duplicate &&
           <div>
           <p>{errors.duplicate}</p>
+        </div>
+      }
+
+        {errors.notFound &&
+          <div>
+          <p>{errors.notFound}</p>
         </div>
       }
     </>
