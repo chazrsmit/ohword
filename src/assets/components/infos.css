@@ -1,0 +1,7 @@
+.div-infos {
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: clamp(15px, 0.2vw + 0.9rem, 28px);
+}

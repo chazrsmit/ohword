@@ -1,7 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&family=Noto+Serif+SC:wght@200..900&family=Oranienbaum&family=Tai+Heritage+Pro:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap&family=Noto+Serif+SC:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&display=swap');
 
 .add {
     position: fixed;
     top: 0;
-    right: 0.1%;
+    right: 1%;
+}
+
+@media (min-width: 992px) {
+    .add {
+        right: 0.3%;
+    }
 }

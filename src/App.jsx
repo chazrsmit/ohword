@@ -222,8 +222,8 @@ function App() {
               // div contenant le mot + les infos
               <div className="col-12 col-lg-4">
                 {/* chaque case fait l'équivalent d'un tiers sur grands écrans, et prend toute la largeur de la colonne sur mobile */}
-                <div className="div-word" onClick={() => handleClick(word.id)}>
-                  <Word word={word} />
+                <div className="div-word">
+                  <Word word={word} handleClick={handleClick} />
                   <AnimatePresence>
                     {openWord === word.id && // on check que l'id cliquée correspond au bon mot
                       <motion.div

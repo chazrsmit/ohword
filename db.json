@@ -199,6 +199,16 @@
       "fourthDef": "Only affirming the possibility that a predicate be actualised.",
       "source": "https://en.wiktionary.org/wiki/problematic",
       "id": "HhZnOWamlEU"
+    },
+    {
+      "text": "aggravated",
+      "phonetic": "",
+      "definition": "To make (an offence) worse or more severe; to increase in offensiveness or heinousness.",
+      "secondDef": "(by extension) To make worse; to exacerbate.",
+      "thirdDef": "Having been the subject of aggravation; frustrated and angry.",
+      "fourthDef": "",
+      "source": "https://en.wiktionary.org/wiki/aggravate",
+      "id": "fK4n-PxsVY4"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

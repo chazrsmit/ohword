@@ -1,11 +1,11 @@
-
+import './infos.css'
 
 export default function Infos({ word, handleRemove }) {
 
 
     return(
         <>
-            <div>
+            <div className="div-infos">
               <p>{word.phonetic}</p>
               <p>{word.definition}</p>
               <p>{word.secondDef}</p>
