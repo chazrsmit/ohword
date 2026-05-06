@@ -249,7 +249,7 @@ function App() {
       </div>
 
       {/* colonne de droite */}
-      <div className="col-6 col-lg-3">
+      <div className="add col-6 col-lg-3 d-flex flex-column align-items-end g-0">
         <Add inputValue={inputValue} setInputValue={setInputValue} setErrors={setErrors} handleAdd={handleAdd} errors={errors} />
       </div>
     

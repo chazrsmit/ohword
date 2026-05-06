@@ -27,7 +27,9 @@ export default function Add({ inputValue, setInputValue, setErrors, handleAdd, e
           }
           placeholder="Type a Word"
         />
-        <button onClick={handleAdd}>Add a new word</button>
+        {/* Bouton */}
+        <button id="btn-add" onClick={handleAdd}>+</button>
+
         {/* affichage des erreurs */}
         {errors.invalid && 
           <div>

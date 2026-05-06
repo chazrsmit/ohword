@@ -129,6 +129,76 @@
       "fourthDef": "To convey, as by will or lease.",
       "source": "https://en.wiktionary.org/wiki/demise",
       "id": "i9SWI0rXFR4"
+    },
+    {
+      "text": "addiction",
+      "phonetic": "/əˈdɪkʃən/",
+      "definition": "A state that is characterized by compulsive drug use or compulsive engagement in rewarding behavior, despite negative consequences.",
+      "secondDef": "The state of being addicted; devotion; inclination.",
+      "thirdDef": "",
+      "fourthDef": "",
+      "source": "https://en.wiktionary.org/wiki/addiction",
+      "id": "qRCgrKxpDXE"
+    },
+    {
+      "text": "bereavement",
+      "phonetic": "",
+      "definition": "The state of being bereaved; deprivation; especially the loss of a relative by death",
+      "secondDef": "",
+      "thirdDef": "",
+      "fourthDef": "",
+      "source": "https://en.wiktionary.org/wiki/bereavement",
+      "id": "NVyYfdTsa8Q"
+    },
+    {
+      "text": "pride",
+      "phonetic": "/pɹaɪd/",
+      "definition": "The quality or state of being proud; an unreasonable overestimation of one's own superiority in terms of talents, looks, wealth, importance etc., which manifests itself in lofty airs, distance, reserve and often contempt of others.",
+      "secondDef": "(often with of or in) A sense of one's own worth, and abhorrence of what is beneath or unworthy of one; lofty self-respect; noble self-esteem; elevation of character; dignified bearing; proud delight; -- in a good sense.",
+      "thirdDef": "To take or experience pride in something; to be proud of it.",
+      "fourthDef": "",
+      "source": "https://en.wiktionary.org/wiki/pride",
+      "id": "sEZANl1YYm0"
+    },
+    {
+      "text": "accessibility",
+      "phonetic": "/ækˌsɛs.əˈbɪl.ət.i/",
+      "definition": "The quality of being accessible, or of admitting approach; receptiveness.",
+      "secondDef": "Features that increase software usability for users with certain impairments.",
+      "thirdDef": "",
+      "fourthDef": "",
+      "source": "https://en.wiktionary.org/wiki/accessibility",
+      "id": "MDXhp8qiwtc"
+    },
+    {
+      "text": "algorithm",
+      "phonetic": "/ˈælɡəɹɪðm̩/",
+      "definition": "A collection of ordered steps that solve a mathematical problem. A precise step-by-step plan for a computational procedure that possibly begins with an input value and yields an output value in a finite number of steps.",
+      "secondDef": "Calculation with Arabic numerals; algorism.",
+      "thirdDef": "",
+      "fourthDef": "",
+      "source": "https://en.wiktionary.org/wiki/algorithm",
+      "id": "rwOG55CwCjs"
+    },
+    {
+      "text": "Chaos",
+      "phonetic": "/ˈkeɪ.ɒs/",
+      "definition": "The unordered state of matter in classical accounts of cosmogony.",
+      "secondDef": "Any state of disorder; a confused or amorphous mixture or conglomeration.",
+      "thirdDef": "",
+      "fourthDef": "",
+      "source": "https://en.wiktionary.org/wiki/chaos",
+      "id": "2Kw-ZM1mWNQ"
+    },
+    {
+      "text": "problematic",
+      "phonetic": "/ˌpɹɒbləˈmætɪk/",
+      "definition": "(chiefly in the plural) A problem or difficulty in a particular field of study.",
+      "secondDef": "",
+      "thirdDef": "Posing a problem; having or suffering from problem(s):",
+      "fourthDef": "Only affirming the possibility that a predicate be actualised.",
+      "source": "https://en.wiktionary.org/wiki/problematic",
+      "id": "HhZnOWamlEU"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

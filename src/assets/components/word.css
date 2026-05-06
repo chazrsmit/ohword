@@ -15,13 +15,13 @@
     }
 
     .li-word p {
-        line-height: 1;
+        line-height: 1.1 !important;
     }
 }
 
 .li-word p {
     width: 100%;
-    line-height: 1.2;
+    line-height: 1.3;
 }
 
 
