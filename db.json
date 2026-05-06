@@ -1,14 +1,28 @@
 {
   "words": [
     {
-      "text": "sun",
-      "phonetic": "/sʌn/",
-      "definition": "A star, especially when seen as the centre of any single solar system.",
-      "secondDef": "The light and warmth which is received from the sun.",
-      "thirdDef": "To expose to the warmth and radiation of the sun.",
-      "fourthDef": "To warm or dry in the sunshine.",
-      "source": "https://en.wiktionary.org/wiki/sun",
-      "id": "3UTcvfn8amk"
+      "text": "word",
+      "phonetic": "/wɜːd/",
+      "definition": "The smallest unit of language that has a particular meaning and can be expressed by itself; the smallest discrete, meaningful unit of language. (contrast morpheme.)",
+      "secondDef": "Something like such a unit of language:",
+      "thirdDef": "To say or write (something) using particular words; to phrase (something).",
+      "fourthDef": "To flatter with words, to cajole.",
+      "source": "https://en.wiktionary.org/wiki/word",
+      "typeOne": "noun",
+      "typeTwo": "verb",
+      "id": "nAVJgxMJhpw"
+    },
+    {
+      "text": "Glory",
+      "phonetic": "/ˈɡlo(ː)ɹi/",
+      "definition": "Great or overwhelming beauty or splendour.",
+      "secondDef": "Honour, admiration, or distinction, accorded by common consent to a person or thing; high reputation; renown.",
+      "thirdDef": "To exult with joy; to rejoice.",
+      "fourthDef": "To boast; to be proud.",
+      "source": "https://en.wiktionary.org/wiki/glory",
+      "typeOne": "noun",
+      "typeTwo": "verb",
+      "id": "E82-ttOHf10"
     },
     {
       "text": "blazing",
@@ -18,197 +32,57 @@
       "thirdDef": "To blow, as from a trumpet",
       "fourthDef": "To publish; announce publicly",
       "source": "https://en.wiktionary.org/wiki/blaze",
-      "id": "KxELIdmxDeQ"
+      "typeOne": "verb",
+      "typeTwo": "verb",
+      "id": "qhUQASq8C5o"
     },
     {
-      "text": "architecture",
-      "phonetic": "/ˈɑː.kɪ.ˌtɛk.tʃə/",
-      "definition": "The art and science of designing and managing the construction of buildings and other structures, particularly if they are well proportioned and decorated.",
-      "secondDef": "The profession of an architect.",
+      "text": "sun",
+      "phonetic": "/sʌn/",
+      "definition": "A star, especially when seen as the centre of any single solar system.",
+      "secondDef": "The light and warmth which is received from the sun.",
+      "thirdDef": "To expose to the warmth and radiation of the sun.",
+      "fourthDef": "To warm or dry in the sunshine.",
+      "source": "https://en.wiktionary.org/wiki/sun",
+      "typeOne": "noun",
+      "typeTwo": "verb",
+      "id": "w1zCvNGGYRI"
+    },
+    {
+      "text": "amazement",
+      "phonetic": "/əˈmeɪz.mənt/",
+      "definition": "The condition of being amazed; overwhelming wonder, as from surprise, sudden fear, horror, or admiration; astonishment.",
+      "secondDef": "A particular feeling of wonder, surprise, fear, or horror.",
       "thirdDef": "",
       "fourthDef": "",
-      "source": "https://en.wiktionary.org/wiki/architecture",
-      "id": "k6AApAdnYZg"
+      "source": "https://en.wiktionary.org/wiki/amazement",
+      "typeOne": "noun",
+      "typeTwo": "",
+      "id": "OooYzQ94KOw"
     },
     {
-      "text": "new",
-      "phonetic": "/njʉː/",
-      "definition": "Things that are new.",
-      "secondDef": "A kind of light beer.",
-      "thirdDef": "To make new; to recreate; to renew.",
-      "fourthDef": "",
-      "source": "https://en.wiktionary.org/wiki/new",
-      "id": "tPoevvHLkhw"
-    },
-    {
-      "text": "ratchet",
-      "phonetic": "/ˈɹætʃɪt/",
-      "definition": "A pawl, click or detent for holding or propelling a ratchet wheel, or ratch, etc.",
-      "secondDef": "A mechanism composed of a ratchet wheel, or ratch and pawl.",
-      "thirdDef": "To cause to become incremented or decremented.",
-      "fourthDef": "To increment or decrement.",
-      "source": "https://en.wiktionary.org/wiki/ratchet",
-      "id": "LaVzGvx-f7w"
-    },
-    {
-      "text": "Clank",
-      "phonetic": "/klæŋk/",
-      "definition": "A loud, hard sound of metal hitting metal.",
-      "secondDef": "",
-      "thirdDef": "To make a clanking sound",
-      "fourthDef": "To cause to sound with a clank.",
-      "source": "https://en.wiktionary.org/wiki/clank",
-      "id": "znp3iXujPFY"
-    },
-    {
-      "text": "Steel",
-      "phonetic": "/stiːl/",
-      "definition": "An artificial metal produced from iron, harder and more elastic than elemental iron; used figuratively as a symbol of hardness.",
-      "secondDef": "Any item made of this metal, particularly including:",
-      "thirdDef": "To edge, cover, or point with steel.",
-      "fourthDef": "To harden or strengthen; to nerve or make obdurate; to fortify against.",
-      "source": "https://en.wiktionary.org/wiki/steel",
-      "id": "eGZicSpeX5I"
-    },
-    {
-      "text": "Affirmation",
-      "phonetic": "/æfɝˈmeɪʃn/",
-      "definition": "That which is affirmed; a declaration that something is true.",
-      "secondDef": "The solemn declaration made by Quakers and others incapable of taking an oath.",
-      "thirdDef": "",
-      "fourthDef": "",
-      "source": "https://en.wiktionary.org/wiki/affirmation",
-      "id": "VU82M-t_lEA"
-    },
-    {
-      "text": "Ease",
-      "phonetic": "/iːz/",
-      "definition": "Ability, the means to do something, particularly:",
-      "secondDef": "Comfort, a state or quality lacking unpleasantness, particularly:",
-      "thirdDef": "To free (something) from pain, worry, agitation, etc.",
-      "fourthDef": "To alleviate, assuage or lessen (pain).",
-      "source": "https://en.wiktionary.org/wiki/ease",
-      "id": "UrwcbcRkMkY"
-    },
-    {
-      "text": "Disappointment",
-      "phonetic": "/dɪsəˈpɔɪntmənt/",
-      "definition": "A feeling of sadness or frustration when a strongly held expectation is not met.",
-      "secondDef": "A circumstance in which a strongly held expectation is not met.",
-      "thirdDef": "",
-      "fourthDef": "",
-      "source": "https://en.wiktionary.org/wiki/disappointment",
-      "id": "WG2Qsz6gIso"
-    },
-    {
-      "text": "acknowledgement",
+      "text": "repulsion",
       "phonetic": "",
-      "definition": "The act of acknowledging",
-      "secondDef": "The act of recognizing in a particular character or relationship; recognition of existence, authority, truth, or genuineness.",
+      "definition": "The act of repelling or the condition of being repelled.",
+      "secondDef": "An extreme dislike of something, or hostility to something.",
       "thirdDef": "",
       "fourthDef": "",
-      "source": "https://en.wiktionary.org/wiki/acknowledgement",
-      "id": "wq2W68_zjjM"
+      "source": "https://en.wiktionary.org/wiki/repulsion",
+      "typeOne": "noun",
+      "typeTwo": "",
+      "id": "pWt1e5_SEkA"
     },
     {
-      "text": "barbarian",
-      "phonetic": "/bɑː(ɹ).ˈbɛə.ɹi.ən/",
-      "definition": "A non-Greek or a non-Roman.",
-      "secondDef": "An uncivilized or uncultured person, originally compared to the hellenistic Greco-Roman civilisation; often associated with fighting or other such shows of strength.",
-      "thirdDef": "Relating to people, countries or customs perceived as uncivilized or inferior.",
-      "fourthDef": "",
-      "source": "https://en.wiktionary.org/wiki/barbarian",
-      "id": "ZkGy_BUQbz8"
-    },
-    {
-      "text": "Demise",
-      "phonetic": "/dɪˈmaɪz/",
-      "definition": "The conveyance or transfer of an estate, either in fee for life or for years, most commonly the latter.",
-      "secondDef": "Transmission by formal act or conveyance to an heir or successor; transference; especially, the transfer or transmission of the crown or royal authority to a successor.",
-      "thirdDef": "To give.",
-      "fourthDef": "To convey, as by will or lease.",
-      "source": "https://en.wiktionary.org/wiki/demise",
-      "id": "i9SWI0rXFR4"
-    },
-    {
-      "text": "addiction",
-      "phonetic": "/əˈdɪkʃən/",
-      "definition": "A state that is characterized by compulsive drug use or compulsive engagement in rewarding behavior, despite negative consequences.",
-      "secondDef": "The state of being addicted; devotion; inclination.",
-      "thirdDef": "",
-      "fourthDef": "",
-      "source": "https://en.wiktionary.org/wiki/addiction",
-      "id": "qRCgrKxpDXE"
-    },
-    {
-      "text": "bereavement",
-      "phonetic": "",
-      "definition": "The state of being bereaved; deprivation; especially the loss of a relative by death",
-      "secondDef": "",
-      "thirdDef": "",
-      "fourthDef": "",
-      "source": "https://en.wiktionary.org/wiki/bereavement",
-      "id": "NVyYfdTsa8Q"
-    },
-    {
-      "text": "pride",
-      "phonetic": "/pɹaɪd/",
-      "definition": "The quality or state of being proud; an unreasonable overestimation of one's own superiority in terms of talents, looks, wealth, importance etc., which manifests itself in lofty airs, distance, reserve and often contempt of others.",
-      "secondDef": "(often with of or in) A sense of one's own worth, and abhorrence of what is beneath or unworthy of one; lofty self-respect; noble self-esteem; elevation of character; dignified bearing; proud delight; -- in a good sense.",
-      "thirdDef": "To take or experience pride in something; to be proud of it.",
-      "fourthDef": "",
-      "source": "https://en.wiktionary.org/wiki/pride",
-      "id": "sEZANl1YYm0"
-    },
-    {
-      "text": "accessibility",
-      "phonetic": "/ækˌsɛs.əˈbɪl.ət.i/",
-      "definition": "The quality of being accessible, or of admitting approach; receptiveness.",
-      "secondDef": "Features that increase software usability for users with certain impairments.",
-      "thirdDef": "",
-      "fourthDef": "",
-      "source": "https://en.wiktionary.org/wiki/accessibility",
-      "id": "MDXhp8qiwtc"
-    },
-    {
-      "text": "algorithm",
-      "phonetic": "/ˈælɡəɹɪðm̩/",
-      "definition": "A collection of ordered steps that solve a mathematical problem. A precise step-by-step plan for a computational procedure that possibly begins with an input value and yields an output value in a finite number of steps.",
-      "secondDef": "Calculation with Arabic numerals; algorism.",
-      "thirdDef": "",
-      "fourthDef": "",
-      "source": "https://en.wiktionary.org/wiki/algorithm",
-      "id": "rwOG55CwCjs"
-    },
-    {
-      "text": "Chaos",
-      "phonetic": "/ˈkeɪ.ɒs/",
-      "definition": "The unordered state of matter in classical accounts of cosmogony.",
-      "secondDef": "Any state of disorder; a confused or amorphous mixture or conglomeration.",
-      "thirdDef": "",
-      "fourthDef": "",
-      "source": "https://en.wiktionary.org/wiki/chaos",
-      "id": "2Kw-ZM1mWNQ"
-    },
-    {
-      "text": "problematic",
-      "phonetic": "/ˌpɹɒbləˈmætɪk/",
-      "definition": "(chiefly in the plural) A problem or difficulty in a particular field of study.",
-      "secondDef": "",
-      "thirdDef": "Posing a problem; having or suffering from problem(s):",
-      "fourthDef": "Only affirming the possibility that a predicate be actualised.",
-      "source": "https://en.wiktionary.org/wiki/problematic",
-      "id": "HhZnOWamlEU"
-    },
-    {
-      "text": "aggravated",
-      "phonetic": "",
-      "definition": "To make (an offence) worse or more severe; to increase in offensiveness or heinousness.",
-      "secondDef": "(by extension) To make worse; to exacerbate.",
-      "thirdDef": "Having been the subject of aggravation; frustrated and angry.",
-      "fourthDef": "",
-      "source": "https://en.wiktionary.org/wiki/aggravate",
-      "id": "fK4n-PxsVY4"
+      "text": "bereft",
+      "phonetic": "/bəˈɹɛft/",
+      "definition": "To deprive by or as if by violence; to rob; to strip; to benim.",
+      "secondDef": "To take away by destroying, impairing, or spoiling; take away by violence.",
+      "thirdDef": "(of a person) Pained by the loss of someone.",
+      "fourthDef": "Deprived of, lacking, stripped of, robbed of.",
+      "source": "https://en.wiktionary.org/wiki/bereave",
+      "typeOne": "verb",
+      "typeTwo": "adjective",
+      "id": "2idIlEo3K7k"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

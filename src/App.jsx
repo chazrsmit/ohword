@@ -84,6 +84,8 @@ function App() {
       secondDef: data.meanings?.[0]?.definitions?.[1]?.definition || "",
       thirdDef: data.meanings?.[1]?.definitions?.[0]?.definition || "",
       fourthDef: data.meanings?.[1]?.definitions?.[1]?.definition || "",
+      typeOne: data.meanings?.[0]?.partOfSpeech || "",
+      typeTwo: data.meanings?.[1]?.partOfSpeech || "",
       source: data.sourceUrls?.[0] || ""
       // ?. (optional chaning) permet de faire que si quelque chose n'existe pas, le code ne casse pas (ça return undefined)
     }
@@ -167,7 +169,9 @@ function App() {
       secondDef: wordData.secondDef,
       thirdDef: wordData.thirdDef,
       fourthDef: wordData.fourthDef,
-      source: wordData.source
+      source: wordData.source,
+      typeOne: wordData.typeOne,
+      typeTwo: wordData.typeTwo
     }
 
       // on doit ajouter le mot dans la DB avant

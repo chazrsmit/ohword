@@ -9,6 +9,8 @@
     height: 10dvh;
     outline: none;
     line-height: 1.3;
+        z-index: 0;
+    background: transparent;
 }
 
 @media (min-width: 992px) {
