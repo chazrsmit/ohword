@@ -9,11 +9,13 @@
 html, body, #root {
   height: 100%;
   padding-left: 0.5%;
+  padding-right: 0.5%;
 }
 
 @media (min-width: 992px) {
     html, body, #root {
         padding-left: 0.2%;
+        padding-right: 0.2%;
     }
 }
 

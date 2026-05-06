@@ -13,7 +13,8 @@
 } */
 
 #phonetic {
-    color: rgb(94, 94, 94);
+    /* color: rgb(94, 94, 94); */
+    color: grey;
     font-weight: 500;
     font-size: clamp(14px, 0.1vw + 0.8rem, 25px);
     /* font-family: "arial"; */
@@ -21,4 +22,28 @@
 
 .types {
     font-size: clamp(14px, 0.1vw + 0.8rem, 25px);
+}
+
+.div-infos p b {
+    background: grey;
+    color: white;
+    border-radius: 20px;
+    /* font-family : "Noto Serif Simplified Chinese", serif; */
+    /* font-weight: 300; */
+}
+
+.div-defs p {
+    text-transform: lowercase;
+}
+
+#btn-remove {
+    border: none;
+    background: transparent;
+    font-size: clamp(14px, 0.1vw + 0.8rem, 25px);
+    font-family: "National Park", sans-serif;
+}
+
+#more {
+    text-decoration: none;
+    color: rgb(0, 85, 255);
 }

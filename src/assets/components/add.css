@@ -6,11 +6,13 @@
     width: 100%;
     text-align: right;
     resize: none;
-    height: 10dvh;
+    height: 9dvh;
     outline: none;
     line-height: 1.3;
-        z-index: 0;
+    z-index: 0;
     background: transparent;
+    overflow-x: auto;
+    white-space: nowrap;
 }
 
 @media (min-width: 992px) {
@@ -30,9 +32,12 @@ textarea:focus::placeholder {
     background: none;
     outline: none;
     font-family : "Noto Serif Simplified Chinese", serif;
-    font-size: clamp(50px, 3vw + 1rem, 62px);
+    /* font-size: clamp(50px, 3vw + 1rem, 62px); */
+    line-height: 1;
+    text-align:right;
+    font-size: clamp(40px, 3vw + 1rem, 62px);
 }
 
 #btn-add:hover {
-        color: rgb(0, 85, 255);
+    color: rgb(0, 85, 255);
 }

@@ -218,7 +218,7 @@ function App() {
     <div className="main d-flex">
 
       {/* colonne de gauche */}
-      <div className="gauche col-6 col-lg-9 ">
+      <div className="gauche col-7 col-md-8 col-lg-10 ">
       {/* 3colones system sur les écrans de plus ou égal à 992px */}
         <div className="row">
           {state.words.length > 0 ? (
@@ -253,7 +253,7 @@ function App() {
       </div>
 
       {/* colonne de droite */}
-      <div className="add col-6 col-lg-3 d-flex flex-column align-items-end g-0">
+      <div className="add col-5 col-md-4 col-lg-2 d-flex flex-column align-items-end g-0">
         <Add inputValue={inputValue} setInputValue={setInputValue} setErrors={setErrors} handleAdd={handleAdd} errors={errors} />
       </div>
     

@@ -25,10 +25,10 @@ export default function Add({ inputValue, setInputValue, setErrors, handleAdd, e
               };
             }
           }
-          placeholder="Type a Word"
+          placeholder="Type..."
         />
         {/* Bouton */}
-        <button id="btn-add" onClick={handleAdd}>+</button>
+        <button id="btn-add" onClick={handleAdd}>Add</button>
 
         {/* affichage des erreurs */}
         {errors.invalid && 

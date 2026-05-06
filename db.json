@@ -13,18 +13,6 @@
       "id": "nAVJgxMJhpw"
     },
     {
-      "text": "Glory",
-      "phonetic": "/ˈɡlo(ː)ɹi/",
-      "definition": "Great or overwhelming beauty or splendour.",
-      "secondDef": "Honour, admiration, or distinction, accorded by common consent to a person or thing; high reputation; renown.",
-      "thirdDef": "To exult with joy; to rejoice.",
-      "fourthDef": "To boast; to be proud.",
-      "source": "https://en.wiktionary.org/wiki/glory",
-      "typeOne": "noun",
-      "typeTwo": "verb",
-      "id": "E82-ttOHf10"
-    },
-    {
       "text": "blazing",
       "phonetic": "/ˈbleɪzɪŋ/",
       "definition": "To be on fire, especially producing bright flames.",
@@ -83,6 +71,114 @@
       "typeOne": "verb",
       "typeTwo": "adjective",
       "id": "2idIlEo3K7k"
+    },
+    {
+      "text": "disappointment",
+      "phonetic": "/dɪsəˈpɔɪntmənt/",
+      "definition": "A feeling of sadness or frustration when a strongly held expectation is not met.",
+      "secondDef": "A circumstance in which a strongly held expectation is not met.",
+      "thirdDef": "",
+      "fourthDef": "",
+      "source": "https://en.wiktionary.org/wiki/disappointment",
+      "typeOne": "noun",
+      "typeTwo": "",
+      "id": "iT25fJpznYs"
+    },
+    {
+      "text": "pursuit",
+      "phonetic": "/pəˈsʉːt/",
+      "definition": "The act of pursuing.",
+      "secondDef": "A hobby or recreational activity, done regularly.",
+      "thirdDef": "",
+      "fourthDef": "",
+      "source": "https://en.wiktionary.org/wiki/pursuit",
+      "typeOne": "noun",
+      "typeTwo": "",
+      "id": "HL9ndfHX0Yo"
+    },
+    {
+      "text": "algorithm",
+      "phonetic": "/ˈælɡəɹɪðm̩/",
+      "definition": "A collection of ordered steps that solve a mathematical problem. A precise step-by-step plan for a computational procedure that possibly begins with an input value and yields an output value in a finite number of steps.",
+      "secondDef": "Calculation with Arabic numerals; algorism.",
+      "thirdDef": "",
+      "fourthDef": "",
+      "source": "https://en.wiktionary.org/wiki/algorithm",
+      "typeOne": "noun",
+      "typeTwo": "",
+      "id": "HF-CNdC0imU"
+    },
+    {
+      "text": "purposeful",
+      "phonetic": "",
+      "definition": "Having purpose; intentional.",
+      "secondDef": "Having a purpose in mind; resolute; determined.",
+      "thirdDef": "",
+      "fourthDef": "",
+      "source": "https://en.wiktionary.org/wiki/purposeful",
+      "typeOne": "adjective",
+      "typeTwo": "",
+      "id": "qspah405KJk"
+    },
+    {
+      "text": "analog",
+      "phonetic": "/ˈæ.nə.lɑɡ/",
+      "definition": "Something that bears an analogy to something else",
+      "secondDef": "An organ or structure that is similar in function to one in another kind of organism but is of dissimilar evolutionary origin",
+      "thirdDef": "(of a device or system) in which the value of a data item (such as time) is represented by a continuous(ly) variable physical quantity that can be measured (such as the shadow of a sundial)",
+      "fourthDef": "",
+      "source": "https://en.wiktionary.org/wiki/analog",
+      "typeOne": "noun",
+      "typeTwo": "adjective",
+      "id": "OZH5Tp7fXrI"
+    },
+    {
+      "text": "new",
+      "phonetic": "/njʉː/",
+      "definition": "Things that are new.",
+      "secondDef": "A kind of light beer.",
+      "thirdDef": "To make new; to recreate; to renew.",
+      "fourthDef": "",
+      "source": "https://en.wiktionary.org/wiki/new",
+      "typeOne": "noun",
+      "typeTwo": "verb",
+      "id": "RsfIbnHGOQE"
+    },
+    {
+      "text": "problematic",
+      "phonetic": "/ˌpɹɒbləˈmætɪk/",
+      "definition": "(chiefly in the plural) A problem or difficulty in a particular field of study.",
+      "secondDef": "",
+      "thirdDef": "Posing a problem; having or suffering from problem(s):",
+      "fourthDef": "Only affirming the possibility that a predicate be actualised.",
+      "source": "https://en.wiktionary.org/wiki/problematic",
+      "typeOne": "noun",
+      "typeTwo": "adjective",
+      "id": "GC2C_arFQT8"
+    },
+    {
+      "text": "behavior",
+      "phonetic": "[bɪˈheɪvjə]",
+      "definition": "Human conduct relative to social norms.",
+      "secondDef": "The way a living creature behaves or acts generally.",
+      "thirdDef": "",
+      "fourthDef": "",
+      "source": "https://en.wiktionary.org/wiki/behavior",
+      "typeOne": "noun",
+      "typeTwo": "",
+      "id": "Fg_CNC_jnxo"
+    },
+    {
+      "text": "ablaze",
+      "phonetic": "/əˈbleɪz/",
+      "definition": "Burning fiercely; in a blaze; on fire.",
+      "secondDef": "Radiant with bright light and color.",
+      "thirdDef": "On fire; in a blaze, gleaming.",
+      "fourthDef": "Lit up brightly and with color.",
+      "source": "https://en.wiktionary.org/wiki/ablaze",
+      "typeOne": "adjective",
+      "typeTwo": "adverb",
+      "id": "6zXt-X42svY"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
