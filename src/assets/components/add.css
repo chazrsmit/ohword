@@ -1,0 +1,16 @@
+#add-input {
+    font-family : "Noto Serif Simplified Chinese", serif;
+    /* font-size: clamp(32px, 3vw + 1rem, 62px); */
+    font-size: clamp(40px, 3vw + 1rem, 62px);
+    list-style-type: none;
+    border: none;
+    width: 100%;
+    text-align: right;
+    resize: none;
+    height: 15dvh;
+    line-height: 1;
+}
+
+#add-input:focus, #add-input:active, #add-input::placeholder {
+    border: none !important;
+}

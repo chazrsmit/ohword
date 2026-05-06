@@ -1,6 +1,12 @@
-import { useReducer, useState, useEffect } from 'react'
-import './App.css'
-import axios from 'axios'
+import { useReducer, useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'motion/react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.min.js';
+import './App.css';
+import axios from 'axios';
+import Infos from './assets/components/Infos';
+import Add from './assets/components/Add';
+import Word from './assets/components/Word';
 
 // sources: https://namastedev.com/blog/react-usereducer-hook-with-examples-3/ ; https://dev.to/edriso/how-to-use-the-usereducer-hook-in-react-3cjf ; https://fullstackopen.com/en/part2/getting_data_from_server
 
@@ -74,7 +80,11 @@ function App() {
     return {
       // et en résultat, on renoit un objet qui contient phonetic et definition
       phonetic: data.phonetic || "",
-      definition: data.meanings?.[0]?.definitions?.[0]?.definition || ""
+      definition: data.meanings?.[0]?.definitions?.[0]?.definition || "",
+      secondDef: data.meanings?.[0]?.definitions?.[1]?.definition || "",
+      thirdDef: data.meanings?.[1]?.definitions?.[0]?.definition || "",
+      fourthDef: data.meanings?.[1]?.definitions?.[1]?.definition || "",
+      source: data.sourceUrls?.[0] || ""
       // ?. (optional chaning) permet de faire que si quelque chose n'existe pas, le code ne casse pas (ça return undefined)
     }
   };
@@ -153,7 +163,11 @@ function App() {
     const newWord = {
       text: inputValue,
       phonetic: wordData.phonetic,
-      definition: wordData.definition
+      definition: wordData.definition,
+      secondDef: wordData.secondDef,
+      thirdDef: wordData.thirdDef,
+      fourthDef: wordData.fourthDef,
+      source: wordData.source
     }
 
       // on doit ajouter le mot dans la DB avant
@@ -168,7 +182,11 @@ function App() {
 
     // on clear
     setInputValue('')
-    setError(null)
+    setErrors({
+      duplicate: null,
+      invalidChars: null,
+      notFound: null
+    });
   }
 
   // fonction pour supprimer un mot
@@ -183,60 +201,59 @@ function App() {
       })
   }
 
+  //logique opening de la div avec les infos complémentaires
+  const [openWord, setOpenWord] = useState(null); //par défaut c'est null si aucune id n'est reçue 
+
+  // on ne veut qu'une seul div s'ouvre, donc on ne peut prendre qu'une seule id en paramètre
+  const handleClick = (id) => {
+    setOpenWord(prev => prev === id ? 'null' : id) // signifie : si on clique sur un mot DEJA ouvert, alors ça referme la div. sinon, ça ouvre l'autre div.
+
+  }
+
   return (
-    <>
-    <div>
-    {state.words.length > 0 ? (
-      state.words.map(word => (
-        <>
-        <li key={word.id}>{word.text}</li>
-        <button onClick={() => handleRemove(word.id)}>X</button>
-        <div></div>
-        </>
-      )))
-      :
-      (<p></p>)
-    }
-    </div>
+    <div className="main d-flex">
 
-      <input
-        type="text"
-        value={inputValue}
-        onChange={(e) =>
-          {
-            const value = e.target.value;
-            setInputValue(value);
+      {/* colonne de gauche */}
+      <div className="gauche col-6 col-lg-9 ">
+      {/* 3colones system sur les écrans de plus ou égal à 992px */}
+        <div className="row">
+          {state.words.length > 0 ? (
+            state.words.map(word => (
+              // div contenant le mot + les infos
+              <div className="col-12 col-lg-4">
+                {/* chaque case fait l'équivalent d'un tiers sur grands écrans, et prend toute la largeur de la colonne sur mobile */}
+                <div className="div-word" onClick={() => handleClick(word.id)}>
+                  <Word word={word} />
+                  <AnimatePresence>
+                    {openWord === word.id && // on check que l'id cliquée correspond au bon mot
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: "auto", opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.1, ease: "easeInOut" }}
+                      >
+                        <Infos word={word} handleRemove={handleRemove} />
+                      </motion.div>
+                    }
+                  </AnimatePresence>
+                </div>
+              </div>
 
-            if (value === "") {
-              setErrors({
-                duplicate: null,
-                invalid: null,
-                notFound: null
-              })
-            };
+            )))
+            :
+            // si liste vide
+            (<p></p>)
           }
-        }
-        placeholder="Type a word"
-      />
-      <button onClick={handleAdd}>Add a new word</button>
-      {/* affichage des erreurs */}
-      {errors.invalid && 
-        <div>
-          <p>{errors.invalid}</p>
         </div>
-      }
-      {errors.duplicate &&
-          <div>
-          <p>{errors.duplicate}</p>
-        </div>
-      }
 
-        {errors.notFound &&
-          <div>
-          <p>{errors.notFound}</p>
-        </div>
-      }
-    </>
+      </div>
+
+      {/* colonne de droite */}
+      <div className="col-6 col-lg-3">
+        <Add inputValue={inputValue} setInputValue={setInputValue} setErrors={setErrors} handleAdd={handleAdd} errors={errors} />
+      </div>
+    
+    </div>
   )
 }
 

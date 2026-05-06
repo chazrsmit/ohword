@@ -1,28 +1,134 @@
 {
   "words": [
     {
-      "text": "word",
-      "phonetic": "/wɜːd/",
-      "definition": "",
-      "id": "KwGS_AJJz5U"
-    },
-    {
       "text": "sun",
       "phonetic": "/sʌn/",
-      "definition": "",
-      "id": "VMffVshv3tQ"
+      "definition": "A star, especially when seen as the centre of any single solar system.",
+      "secondDef": "The light and warmth which is received from the sun.",
+      "thirdDef": "To expose to the warmth and radiation of the sun.",
+      "fourthDef": "To warm or dry in the sunshine.",
+      "source": "https://en.wiktionary.org/wiki/sun",
+      "id": "3UTcvfn8amk"
     },
     {
-      "text": "chair",
-      "phonetic": "/t͡ʃɛə(ɹ)/",
-      "definition": "",
-      "id": "C932dszgTLs"
+      "text": "blazing",
+      "phonetic": "/ˈbleɪzɪŋ/",
+      "definition": "To be on fire, especially producing bright flames.",
+      "secondDef": "To send forth or reflect a bright light; shine like a flame.",
+      "thirdDef": "To blow, as from a trumpet",
+      "fourthDef": "To publish; announce publicly",
+      "source": "https://en.wiktionary.org/wiki/blaze",
+      "id": "KxELIdmxDeQ"
     },
     {
-      "text": "drowsy",
-      "phonetic": "/ˈdɹaʊzi/",
-      "definition": "Inclined to drowse; heavy with sleepiness",
-      "id": "6lj96V4mGjE"
+      "text": "architecture",
+      "phonetic": "/ˈɑː.kɪ.ˌtɛk.tʃə/",
+      "definition": "The art and science of designing and managing the construction of buildings and other structures, particularly if they are well proportioned and decorated.",
+      "secondDef": "The profession of an architect.",
+      "thirdDef": "",
+      "fourthDef": "",
+      "source": "https://en.wiktionary.org/wiki/architecture",
+      "id": "k6AApAdnYZg"
+    },
+    {
+      "text": "new",
+      "phonetic": "/njʉː/",
+      "definition": "Things that are new.",
+      "secondDef": "A kind of light beer.",
+      "thirdDef": "To make new; to recreate; to renew.",
+      "fourthDef": "",
+      "source": "https://en.wiktionary.org/wiki/new",
+      "id": "tPoevvHLkhw"
+    },
+    {
+      "text": "ratchet",
+      "phonetic": "/ˈɹætʃɪt/",
+      "definition": "A pawl, click or detent for holding or propelling a ratchet wheel, or ratch, etc.",
+      "secondDef": "A mechanism composed of a ratchet wheel, or ratch and pawl.",
+      "thirdDef": "To cause to become incremented or decremented.",
+      "fourthDef": "To increment or decrement.",
+      "source": "https://en.wiktionary.org/wiki/ratchet",
+      "id": "LaVzGvx-f7w"
+    },
+    {
+      "text": "Clank",
+      "phonetic": "/klæŋk/",
+      "definition": "A loud, hard sound of metal hitting metal.",
+      "secondDef": "",
+      "thirdDef": "To make a clanking sound",
+      "fourthDef": "To cause to sound with a clank.",
+      "source": "https://en.wiktionary.org/wiki/clank",
+      "id": "znp3iXujPFY"
+    },
+    {
+      "text": "Steel",
+      "phonetic": "/stiːl/",
+      "definition": "An artificial metal produced from iron, harder and more elastic than elemental iron; used figuratively as a symbol of hardness.",
+      "secondDef": "Any item made of this metal, particularly including:",
+      "thirdDef": "To edge, cover, or point with steel.",
+      "fourthDef": "To harden or strengthen; to nerve or make obdurate; to fortify against.",
+      "source": "https://en.wiktionary.org/wiki/steel",
+      "id": "eGZicSpeX5I"
+    },
+    {
+      "text": "Affirmation",
+      "phonetic": "/æfɝˈmeɪʃn/",
+      "definition": "That which is affirmed; a declaration that something is true.",
+      "secondDef": "The solemn declaration made by Quakers and others incapable of taking an oath.",
+      "thirdDef": "",
+      "fourthDef": "",
+      "source": "https://en.wiktionary.org/wiki/affirmation",
+      "id": "VU82M-t_lEA"
+    },
+    {
+      "text": "Ease",
+      "phonetic": "/iːz/",
+      "definition": "Ability, the means to do something, particularly:",
+      "secondDef": "Comfort, a state or quality lacking unpleasantness, particularly:",
+      "thirdDef": "To free (something) from pain, worry, agitation, etc.",
+      "fourthDef": "To alleviate, assuage or lessen (pain).",
+      "source": "https://en.wiktionary.org/wiki/ease",
+      "id": "UrwcbcRkMkY"
+    },
+    {
+      "text": "Disappointment",
+      "phonetic": "/dɪsəˈpɔɪntmənt/",
+      "definition": "A feeling of sadness or frustration when a strongly held expectation is not met.",
+      "secondDef": "A circumstance in which a strongly held expectation is not met.",
+      "thirdDef": "",
+      "fourthDef": "",
+      "source": "https://en.wiktionary.org/wiki/disappointment",
+      "id": "WG2Qsz6gIso"
+    },
+    {
+      "text": "acknowledgement",
+      "phonetic": "",
+      "definition": "The act of acknowledging",
+      "secondDef": "The act of recognizing in a particular character or relationship; recognition of existence, authority, truth, or genuineness.",
+      "thirdDef": "",
+      "fourthDef": "",
+      "source": "https://en.wiktionary.org/wiki/acknowledgement",
+      "id": "wq2W68_zjjM"
+    },
+    {
+      "text": "barbarian",
+      "phonetic": "/bɑː(ɹ).ˈbɛə.ɹi.ən/",
+      "definition": "A non-Greek or a non-Roman.",
+      "secondDef": "An uncivilized or uncultured person, originally compared to the hellenistic Greco-Roman civilisation; often associated with fighting or other such shows of strength.",
+      "thirdDef": "Relating to people, countries or customs perceived as uncivilized or inferior.",
+      "fourthDef": "",
+      "source": "https://en.wiktionary.org/wiki/barbarian",
+      "id": "ZkGy_BUQbz8"
+    },
+    {
+      "text": "Demise",
+      "phonetic": "/dɪˈmaɪz/",
+      "definition": "The conveyance or transfer of an estate, either in fee for life or for years, most commonly the latter.",
+      "secondDef": "Transmission by formal act or conveyance to an heir or successor; transference; especially, the transfer or transmission of the crown or royal authority to a successor.",
+      "thirdDef": "To give.",
+      "fourthDef": "To convey, as by will or lease.",
+      "source": "https://en.wiktionary.org/wiki/demise",
+      "id": "i9SWI0rXFR4"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

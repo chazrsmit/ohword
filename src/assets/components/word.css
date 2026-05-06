@@ -1,0 +1,32 @@
+
+.li-word {
+    font-family : "Noto Serif Simplified Chinese", serif;
+    /* font-size: clamp(32px, 3vw + 1rem, 62px); */
+    font-size: clamp(40px, 3vw + 1rem, 62px);
+    list-style-type: none;
+    text-transform: capitalize;
+    /* white-space: normal;
+    /* overflow-wrap: anywhere; */
+}
+
+@media (min-width:992px) {
+    .li-word{
+        word-break: break-word; 
+    }
+
+    .li-word p {
+        line-height: 1;
+    }
+}
+
+.li-word p {
+    width: 100%;
+    line-height: 1.2;
+}
+
+
+.li-word p:hover{
+    font-style: italic;
+    color: rgb(0, 85, 255);
+    cursor: pointer;
+}
