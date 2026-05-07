@@ -9,7 +9,7 @@
     height: 9dvh;
     outline: none;
     line-height: 1.3;
-    z-index: 0;
+    /* z-index: 0; */
     background: transparent;
     overflow-x: auto;
     white-space: nowrap;
@@ -47,5 +47,4 @@ textarea:focus::placeholder {
 .errors p {
     font-family : "Noto Serif Simplified Chinese", serif;
     text-align: right;
-
 }
