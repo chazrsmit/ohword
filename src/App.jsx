@@ -211,6 +211,7 @@ function App() {
   // on ne veut qu'une seul div s'ouvre, donc on ne peut prendre qu'une seule id en paramètre
   const handleClick = (id) => {
     setOpenWord(prev => prev === id ? 'null' : id) // signifie : si on clique sur un mot DEJA ouvert, alors ça referme la div. sinon, ça ouvre l'autre div.
+    console.log(openWord);
 
   }
 
@@ -227,7 +228,7 @@ function App() {
               <div className="col-12 col-lg-4">
                 {/* chaque case fait l'équivalent d'un tiers sur grands écrans, et prend toute la largeur de la colonne sur mobile */}
                 <div className="div-word">
-                  <Word word={word} handleClick={handleClick} />
+                  <Word word={word} handleClick={handleClick} openWord={openWord} />
                   <AnimatePresence>
                     {openWord === word.id && // on check que l'id cliquée correspond au bon mot
                       <motion.div

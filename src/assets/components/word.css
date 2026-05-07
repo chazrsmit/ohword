@@ -25,8 +25,9 @@
 }
 
 
-.li-word p:hover{
+.li-word p:hover, .li-word p:active, .li-word p:focus, .li-word.open p {
     font-style: italic;
     color: rgb(0, 85, 255);
     cursor: pointer;
+    text-transform: lowercase;
 }

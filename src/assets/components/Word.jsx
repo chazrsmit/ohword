@@ -1,10 +1,10 @@
 import './word.css'
 
-export default function Word({ word, handleClick }) {
+export default function Word({ word, handleClick, openWord }) {
 
     return (
         <>
-            <li key={word.id} className="li-word" onClick={() => handleClick(word.id)}>
+            <li key={word.id} className={`li-word ${openWord === word.id && 'open'}`} onClick={() => handleClick(word.id)}>
                 <p>
                     {word.text}
                 </p>

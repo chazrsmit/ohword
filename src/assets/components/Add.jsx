@@ -31,22 +31,24 @@ export default function Add({ inputValue, setInputValue, setErrors, handleAdd, e
         <button id="btn-add" onClick={handleAdd}>Add</button>
 
         {/* affichage des erreurs */}
-        {errors.invalid && 
-          <div>
-            <p>{errors.invalid}</p>
-          </div>
-        }
-        {errors.duplicate &&
-          <div>
-            <p>{errors.duplicate}</p>
-          </div>
-        }
+        <div className="errors">
+          {errors.invalid && 
+            <div>
+              <p>→ {errors.invalid}</p>
+            </div>
+          }
+          {errors.duplicate &&
+            <div>
+              <p>→ {errors.duplicate}</p>
+            </div>
+          }
 
-        {errors.notFound &&
-          <div>
-            <p>{errors.notFound}</p>
-          </div>
-        }
+          {errors.notFound &&
+            <div>
+              <p>→ {errors.notFound}</p>
+            </div>
+          }
+        </div>
 
         </>
     )

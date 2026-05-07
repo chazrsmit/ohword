@@ -61,18 +61,6 @@
       "id": "pWt1e5_SEkA"
     },
     {
-      "text": "bereft",
-      "phonetic": "/bəˈɹɛft/",
-      "definition": "To deprive by or as if by violence; to rob; to strip; to benim.",
-      "secondDef": "To take away by destroying, impairing, or spoiling; take away by violence.",
-      "thirdDef": "(of a person) Pained by the loss of someone.",
-      "fourthDef": "Deprived of, lacking, stripped of, robbed of.",
-      "source": "https://en.wiktionary.org/wiki/bereave",
-      "typeOne": "verb",
-      "typeTwo": "adjective",
-      "id": "2idIlEo3K7k"
-    },
-    {
       "text": "disappointment",
       "phonetic": "/dɪsəˈpɔɪntmənt/",
       "definition": "A feeling of sadness or frustration when a strongly held expectation is not met.",
@@ -179,6 +167,30 @@
       "typeOne": "adjective",
       "typeTwo": "adverb",
       "id": "6zXt-X42svY"
+    },
+    {
+      "text": "oblivious",
+      "phonetic": "/əˈblɪ.vi.əs/",
+      "definition": "(usually followed by to or of) Lacking awareness; unmindful; unaware, unconscious of.",
+      "secondDef": "Failing to remember; forgetful.",
+      "thirdDef": "",
+      "fourthDef": "",
+      "source": "https://en.wiktionary.org/wiki/oblivious",
+      "typeOne": "adjective",
+      "typeTwo": "",
+      "id": "8omX0UCr-U0"
+    },
+    {
+      "text": "attuned",
+      "phonetic": "",
+      "definition": "To bring into musical accord.",
+      "secondDef": "To tune (an instrument).",
+      "thirdDef": "(of a musical instrument) Tuned to the correct pitch.",
+      "fourthDef": "Brought into harmony; harmonized.",
+      "source": "https://en.wiktionary.org/wiki/attune",
+      "typeOne": "verb",
+      "typeTwo": "adjective",
+      "id": "zzSiBx7V4gI"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

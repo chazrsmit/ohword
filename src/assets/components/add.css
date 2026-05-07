@@ -41,3 +41,11 @@ textarea:focus::placeholder {
 #btn-add:hover {
     color: rgb(0, 85, 255);
 }
+
+/* erreurs */
+
+.errors p {
+    font-family : "Noto Serif Simplified Chinese", serif;
+    text-align: right;
+
+}
